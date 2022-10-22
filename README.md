@@ -4,7 +4,7 @@
 
 ## 预览
 
-![preview](./preview.png)
+![preview](https://github.com/wayou/num-input/raw/master/preview.png)
 
 ## 使用
 
@@ -17,7 +17,7 @@ $ yarn add num-input
 2. 点击开发者工具中的菜单栏：工具 --> 构建 npm
 3. 在需要使用的页面配置文件中添加引用
 
-```
+```json
 {
   "usingComponents": {
     "num-input": "num-input",
@@ -27,13 +27,47 @@ $ yarn add num-input
 
 更多关于小程序中使用 npm 包的信息参见官方文档 [npm 支持](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)。
 
+## 示例：
+
+_page.json_
+```json
+{
+  "usingComponents": {    
+    "num-input": "num-input"
+  }
+}
+```
+
+_page.wxml_
+```html
+<num-input
+  bindinput="onInput"
+  value="{{ num }}"
+  size="m"
+/>
+```
+
+_page.js_
+```js
+Page({
+  data:{
+    num: 1,
+  }
+  onInput(event) {
+    this.setData({
+      num: event.detail.value
+    })
+  },
+});
+```
+
 ## 配置项
 
 |属性|默认值|描述|
 -|-|-
 |`value`|-|输入框的值|
 |`step`|1|加减点击后的步长|
-|`size`|'m'|尺寸，可选值 `s|m|l` |
+|`size`|`m`|尺寸，可选值 `s|m|l` |
 
 ## 事件
 
