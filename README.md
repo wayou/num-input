@@ -67,6 +67,9 @@ Page({
 -|-|-
 |`value`|-|输入框的值|
 |`step`|1|加减点击后的步长|
+|`ext-class-input`|-|自定义输入框类名|
+|`ext-class-increase`|-|自定义加号按钮框类名|
+|`ext-class-decrease`|-|自定义减号按钮类名|
 |`size`|`m`|尺寸，可选值 `s`&#124;`m`&#124;`l` |
 
 ## 事件
