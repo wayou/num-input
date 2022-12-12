@@ -20,7 +20,7 @@ $ yarn add num-input
 ```json
 {
   "usingComponents": {
-    "num-input": "num-input",
+    "num-input": "num-input"
   }
 }
 ```
@@ -30,24 +30,23 @@ $ yarn add num-input
 ## 示例：
 
 _page.json_
+
 ```json
 {
-  "usingComponents": {    
+  "usingComponents": {
     "num-input": "num-input"
   }
 }
 ```
 
 _page.wxml_
+
 ```html
-<num-input
-  bindinput="onInput"
-  value="{{ num }}"
-  size="m"
-/>
+<num-input bindinput="onInput" value="{{ num }}" size="m" />
 ```
 
 _page.js_
+
 ```js
 Page({
   data:{
@@ -63,20 +62,21 @@ Page({
 
 ## 配置项
 
-|属性|默认值|描述|
--|-|-
-|`value`|-|输入框的值|
-|`step`|1|加减点击后的步长|
-|`ext-class-input`|-|自定义输入框类名|
-|`ext-class-increase`|-|自定义加号按钮框类名|
-|`ext-class-decrease`|-|自定义减号按钮类名|
-|`size`|`m`|尺寸，可选值 `s`&#124;`m`&#124;`l` |
+| 属性                 | 默认值 | 描述                               |
+| -------------------- | ------ | ---------------------------------- |
+| `value`              | -      | 输入框的值                         |
+| `disabled`           | -      | 是否禁用                           |
+| `step`               | 1      | 加减点击后的步长                   |
+| `ext-class-input`    | -      | 自定义输入框类名                   |
+| `ext-class-increase` | -      | 自定义加号按钮框类名               |
+| `ext-class-decrease` | -      | 自定义减号按钮类名                 |
+| `size`               | `m`    | 尺寸，可选值 `s`&#124;`m`&#124;`l` |
 
 ## 事件
 
-|事件名|描述|
--|-
-|`input`|输入框的发生变化|
+| 事件名  | 描述             |
+| ------- | ---------------- |
+| `input` | 输入框的发生变化 |
 
 ## 相关资源
 
@@ -84,4 +84,3 @@ Page({
 - [weui 文档](https://wechat-miniprogram.github.io/weui/docs/)
 - [组件样式](https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/wxml-wxss.html#%E7%BB%84%E4%BB%B6%E6%A0%B7%E5%BC%8F)
 - [npm 支持](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)
-
